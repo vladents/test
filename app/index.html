@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="plugins/noUiSlider/nouislider.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<nav>
+
+	<div class="logo_mob">
+		<img src="images/avatar.jpg" alt="avatar">
+		<p>Vladen Tsymbal</p>
+	</div>
+	
+    <div class="nav-wrapper center">
+      <ul class="nav-links hide-on-small-only">
+        <li class="active"><a href="#personalInfo">Личная информация</a></li>
+        <li><a href="#my_skills">Опыт</a></li>
+        <li><a href="#my_jsSkill">JavaScript</a></li>
+        <li><a href="#aboutMyself">О себе</a></li>
+      </ul>
+
+			<ul id="slide-out" class="side-nav">
+				<li class="active"><a href="#personalInfo">Личная информация</a></li>
+				<li><a href="#my_skills">Опыт</a></li>
+				<li><a href="#my_jsSkill">JavaScript</a></li>
+				<li><a href="#aboutMyself">О себе</a></li>
+			</ul>
+
+		<div class="nav-btn">
+			<div class="nav-btn-wrap">
+				<div class="line1"></div><div class="line2"></div><div class="line3"></div>
+			</div>
+		</div>
+    </div>
+  </nav>
+
+	<main>
+		<div class="content-container">
+			<section id="personalInfo" class="center">
+				<h1 class="center main-title">Анкета</h1>
+				<div class="center">
+					<img src="images/personal_info-ico.png" alt="icon" class="personal_info-img">
+				</div>
+				<h4 class="section-title">Личная информация</h4>
+				<div class="form-wrap">
+					<div class="input-wrap">
+						<input type="text" placeholder="ФИО" value="Цимбал Владен Николаевич">
+					</div>
+					<div class="input-wrap">
+						<select id="yearPicker">
+							<option value="">Год рождения</option>
+						</select>
+					</div>
+					<div class="input-wrap">
+						<input type="text" placeholder="Место проживания" value="Киев">
+					</div>
+					<div class="input-wrap">
+						<input type="text" placeholder="Skype" value="vladen_tsymbal">
+					</div>
+					<div class="input-wrap">
+						<input type="text" placeholder="E-mail" value="vladentsymbal01@gmail.com">
+					</div>
+				</div>
+			</section>
+
+			<section id="my_skills">
+				<div class="center">
+					<img src="images/my_skills-ico.png" alt="icon" class="my_skills-img">
+				</div>
+				<h4 class="center section-title">Расскажите о своем опыте</h4>
+				<div class="row skills-row">
+					<div class="col s12 m4">
+						<p>
+							<input id="css" type="checkbox" class="filled-in" checked="checked"/>
+							<label for="css">БЭМ/ООCSS</label>
+						</p>
+						<p>
+							<input id="sass" type="checkbox" class="filled-in" checked="checked"/>
+							<label for="sass">Stylus/Less/Sass</label>
+						</p>
+						<p>
+							<input id="svg" type="checkbox" class="filled-in" checked="checked"/>
+							<label for="svg">Работаю с SVG</label>
+						</p>
+					</div>
+					<div class="col s12 m4">
+						<p>
+							<input id="semant" type="checkbox" class="filled-in" checked="checked"/>
+							<label for="semant">Верстаю семантично</label>
+						</p>
+						<p>
+							<input id="es" type="checkbox" class="filled-in" checked="checked"/>
+							<label for="es">ES2015/ES2016</label>
+						</p>
+						<p>
+							<input id="gulp" type="checkbox" class="filled-in" checked="checked"/>
+							<label for="gulp">Gulp/Grunt</label>
+						</p>
+					</div>
+					<div class="col s12 m4">
+						<p>
+							<input id="webpack" type="checkbox" class="filled-in"/>
+							<label for="webpack">Webpack</label>
+						</p>
+						<p>
+							<input id="jquery" type="checkbox" class="filled-in" checked="checked"/>
+							<label for="jquery">jQuery</label>
+						</p>
+						<p>
+							<input id="git" type="checkbox" class="filled-in" checked="checked"/>
+							<label for="git">Использую Git</label>
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="my_jsSkill">
+				<div class="center">
+					<img src="images/js-ico.png" alt="icon" class="my_jsSkill-img">
+				</div>
+				<h4 class="center section-title">Уровень владения JavaScript</h4>
+
+				<div class="row slider-props flex-container">
+					<div class="col s3 bottom-align">
+						<p>Не владею</p>
+					</div>
+					<div class="col s3 bottom-align">
+						<p>Использую готовые решения</p>
+					</div>
+					<div class="col s3 bottom-align">
+						<p>Использую готовые решения и умею их переделывать</p>
+					</div>
+					<div class="col s3 right-bottom-align">
+						<p class="right-align">Пишу сложный JS с нуля</p>
+					</div>
+				</div>
+				<div class="slider-wrap">
+					<div class="divider"></div>
+					<div class="divider"></div>
+					<div class="divider"></div>
+					<div class="divider"></div>
+					<div class="slider-scale">
+						<div class="divider"></div>
+						<div class="divider"></div>
+						<div class="divider"></div>
+						<div class="divider"></div>
+					</div>
+					<div id="slider"></div>
+				</div>
+
+			</section>
+
+			<section id="aboutMyself">
+				<div class="center">
+					<img src="images/aboutMyself-ico.png" alt="icon" class="aboutMyself-img">
+				</div>
+				<h4 class="center section-title">Расскажите о себе</h4>
+				<div class="textarea-wrap">
+					<p class="center">Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</p>
+					<textarea placeholder="Понравилось тем, что..." cols="30" rows="10">Вакансия заинтересовала большими клиентами и интересными работами. От работы ожидаю интересных задач, адекватного менеджмента и хорошего коллектива :)</textarea>
+				</div>
+			</section>
+
+			<section id="submit">
+				<div class="center">
+					<button class="btn waves-effect waves-light basic-btn" type="submit" name="action">Готово</button>
+				</div>
+			</section>
+		</div>
+	</main>
+
+	<div class="mobile_nav">
+		<div class="mobile_nav__wrap">
+			<ul class="list-unstyled">
+				<li class="active"><a href="#personalInfo">Личная информация</a></li>
+		        <li><a href="#my_skills">Опыт</a></li>
+		        <li><a href="#my_jsSkill">JavaScript</a></li>
+		        <li><a href="#aboutMyself">О себе</a></li>
+			</ul>
+		</div><!--.mobile_nav__wrap-->
+	</div><!--.mobile_nav-->
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+	<script src="plugins/noUiSlider/nouislider.min.js"></script>
+  <script src="js/design.js"></script>
+</body>
+</html>
