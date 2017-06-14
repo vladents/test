@@ -5,7 +5,7 @@ $(document).ready(function() {
 
 	function onScroll(event){
 		var scrollPos = $(document).scrollTop();
-		$('.nav-links a, .mobile_nav a').each(function () {
+		$('.nav-links a').each(function () {
 			var currLink = $(this);
 			var refElement = $(currLink.attr("href"));
 			if ((refElement.position().top - 100 <= scrollPos) && (refElement.position().top - 100 + refElement.outerHeight() > scrollPos)) {
@@ -67,8 +67,9 @@ $(document).on('click', '.nav-btn', function(event) {
 	$(this).toggleClass('nav-btn--active');
 });
 
+
 $('.mobile_nav li').click(function(){
 	$('body').removeClass('modal-open');	
 	$('.mobile_nav').removeClass('mobile_nav--active');
 	$('.nav-btn').removeClass('nav-btn--active');
-})
+});
