@@ -33,8 +33,7 @@ html, body {
   position: relative; }
 
 .section-title {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100; }
+  font-family: 'Roboto', sans-serif; }
 
 .flex-container {
   display: flex; }
@@ -49,7 +48,7 @@ html, body {
   justify-content: flex-end; }
 
 .basic-btn {
-  background-color: #8986c3;
+  background-color: #435993;
   border-radius: 8px;
   box-shadow: none;
   color: #fff;
@@ -70,8 +69,8 @@ html, body {
     border-radius: 4px;
     box-sizing: border-box;
     color: #cfcfcf;
-    font-size: 1.4rem;
-    font-weight: 300;
+    font-size: 1.6rem;
+    font-weight: 400;
     height: 4rem;
     line-height: 4rem;
     margin: 0;
@@ -83,7 +82,7 @@ html, body {
       box-sizing: border-box;
       color: #cfcfcf;
       font-size: 1.4rem;
-      font-weight: 300;
+      font-weight: 400;
       height: 4rem;
       line-height: 4rem;
       margin: 0;
@@ -99,16 +98,24 @@ html, body {
   .input-wrap .dropdown-content {
     left: 50% !important;
     transform: translateX(-50%);
-    margin-top: 55px; }
+    margin-top: 4rem; }
     .input-wrap .dropdown-content li {
-      background: #8986c3; }
+      background: #fff; }
       .input-wrap .dropdown-content li > a,
       .input-wrap .dropdown-content li > span {
-        color: #fff; }
+        color: #435993;
+        font: 500 1.4rem 'Roboto';
+        text-align: center;
+        padding-left: 2rem; }
+        .input-wrap .dropdown-content li > a:hover,
+        .input-wrap .dropdown-content li > span:hover {
+          color: #fff; }
+      .input-wrap .dropdown-content li:hover {
+        background: #435993; }
   .input-wrap .caret {
     display: none; }
   .input-wrap input.select-dropdown {
-    background: url(../images/select-arrow.png) 97% center no-repeat;
+    background: url(../images/select-arrow.png) 94% center no-repeat;
     margin: 0 auto;
     max-width: 320px; }
 
@@ -116,7 +123,7 @@ nav {
   background-color: #fff;
   border-bottom: 2px solid #d9d9d9;
   box-shadow: none;
-  height: 80px;
+  height: 77px;
   left: 0;
   line-height: 82px;
   position: fixed;
@@ -130,7 +137,7 @@ nav {
     nav ul a:hover {
       background-color: transparent; }
   nav ul li {
-    margin-right: 36px; }
+    margin-right: 45px; }
     nav ul li a {
       font: 300 14px/100% 'Roboto', sans-serif; }
     nav ul li:last-of-type {
@@ -146,35 +153,60 @@ nav {
 .button-collapse {
   color: #000; }
 
-#personalInfo {
+.personalInfo {
   padding-top: 22%; }
-  #personalInfo .main-title {
+  .personalInfo .main-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    margin-bottom: 8.5%; }
-  #personalInfo .form-wrap {
+    margin-bottom: 8.2%; }
+  .personalInfo .form-wrap {
     margin-top: 6%; }
-    #personalInfo .form-wrap .input-wrap:last-of-type {
+    .personalInfo .form-wrap .input-wrap:last-of-type {
       margin-bottom: 0; }
+  .personalInfo h1 {
+    font-size: 4.65rem;
+    margin: 1.8rem 0 1.68rem 0;
+    line-height: 107%; }
+  .personalInfo h4 {
+    font: 300 2rem 'Roboto';
+    margin-top: 0.6rem;
+    padding-right: 2px; }
 
-#my_skills {
+.my_skills {
   padding-top: 9.2%; }
-  #my_skills .skills-row {
-    margin-bottom: 0px;
-    margin-top: 4.4%; }
-    #my_skills .skills-row p {
+  .my_skills .skills-row {
+    margin: 4.4% -7.7% 0 -1.6%; }
+    @media (max-width: 992px) {
+      .my_skills .skills-row {
+        margin-right: 0;
+        margin-left: 0; } }
+    @media (max-width: 767px) {
+      .my_skills .skills-row {
+        margin-right: 0;
+        margin-left: 0; } }
+    .my_skills .skills-row p {
+      margin-top: 5px;
       margin-bottom: 10px; }
-    #my_skills .skills-row label {
+    .my_skills .skills-row label {
       font-weight: 300;
       color: #000; }
-    #my_skills .skills-row [type="checkbox"].filled-in:checked + label:after {
+    .my_skills .skills-row [type="checkbox"] + label {
+      padding-left: 31px; }
+    .my_skills .skills-row [type="checkbox"].filled-in:checked + label:after {
       background-color: #8986c3;
       border: 2px solid #8986c3; }
-    #my_skills .skills-row [type="checkbox"].filled-in:not(:checked) + label:after {
+    .my_skills .skills-row [type="checkbox"].filled-in:not(:checked) + label:after {
       border: 2px solid #435993; }
+  .my_skills h4 {
+    font-size: 2rem;
+    margin-top: 1.05rem;
+    margin-bottom: 2.912rem; }
 
-#my_jsSkill {
-  padding-top: 14%; }
+.my_jsSkill {
+  padding-top: 15%; }
+  .my_jsSkill h4 {
+    font-size: 2rem;
+    font-weight: 300; }
 
 .slider-props {
   margin-bottom: 0;
@@ -194,7 +226,7 @@ nav {
 .slider-wrap {
   position: relative; }
   .slider-wrap .divider {
-    background-color: transparent;
+    background-color: #fff;
     border-left-width: 1px;
     bottom: 0;
     height: 25px;
@@ -207,7 +239,7 @@ nav {
     .slider-wrap .divider:nth-of-type(4) {
       margin-left: calc(100% - 1px); }
   .slider-wrap > .divider {
-    border-color: #2e211c;
+    border-color: #b7b7b7;
     border-left-style: dotted;
     z-index: 5; }
 
@@ -227,7 +259,7 @@ nav {
     margin-top: -18px;
     width: 0; }
   .slider-scale > .divider {
-    border-color: #2e211c;
+    border-color: #b7b7b7;
     border-left-style: solid;
     z-index: -1; }
 
@@ -255,8 +287,15 @@ nav {
   box-shadow: none;
   transition: right 450ms; }
 
-#aboutMyself {
-  padding-top: 13.5%; }
+.aboutMyself {
+  padding-top: 13%; }
+  .aboutMyself h4 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 0.3rem; }
+  .aboutMyself p {
+    font-size: 16px;
+    margin-top: 0.8rem; }
 
 .textarea-wrap {
   font-weight: 300;
@@ -268,21 +307,22 @@ nav {
     border-radius: 4px;
     font-size: 1.4rem;
     height: 12rem;
-    margin-top: 4.5%;
+    margin-top: 3.8%;
     padding: 1.2rem 1.6rem;
+    font-weight: 400;
     resize: none; }
     .textarea-wrap textarea:focus {
       border-color: #b2b2b2;
       box-shadow: none;
       outline: none; }
 
-#submit {
+.submit {
   padding-top: 8.5%; }
 
 .nav-btn {
   display: none; }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 768px) {
   nav {
     height: 56px;
     line-height: 56px;
@@ -293,6 +333,8 @@ nav {
       display: block; }
     nav .nav-btn {
       display: block; }
+  .hide-on-small-only {
+    display: none; }
   #personalInfo {
     padding-top: 0; }
   #skills .skills-row p:last-of-type {
@@ -304,12 +346,46 @@ nav {
   #aboutmyself {
     padding-top: 22%; } }
 
-.personal_info-img,
-.my_skills-img,
-.my_jsSkill-img,
+.personal_info-img {
+  width: 54px;
+  height: 54px;
+  padding: 0px 8px 6px 0px; }
+  @media (max-width: 992px) {
+    .personal_info-img {
+      width: 50px;
+      height: 50px;
+      padding: 0; } }
+
+.my_skills-img {
+  width: 52px;
+  height: 52px;
+  padding: 2px 4px 1px 0px; }
+  @media (max-width: 992px) {
+    .my_skills-img {
+      width: 50px;
+      height: 50px;
+      padding: 0; } }
+
+.my_jsSkill-img {
+  width: 52px;
+  height: 54px;
+  padding: 3px 4px 1px 0px; }
+  @media (max-width: 992px) {
+    .my_jsSkill-img {
+      width: 50px;
+      height: 50px;
+      padding: 0; } }
+
 .aboutMyself-img {
-  width: 50px;
-  height: 50px; }
+  width: 54px;
+  height: 57px;
+  padding: 3px 5px 8px 1px;
+  margin-bottom: 1%; }
+  @media (max-width: 992px) {
+    .aboutMyself-img {
+      width: 50px;
+      height: 50px;
+      padding: 0; } }
 
 .logo_mob img {
   width: 40px;
