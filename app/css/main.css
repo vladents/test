@@ -58,7 +58,7 @@ html, body {
   padding: 0 2.1rem;
   text-transform: capitalize; }
   .basic-btn:hover, .basic-btn.active {
-    background-color: #6864b2; }
+    background-color: #334470; }
 
 .input-wrap {
   margin: 0 auto 3.25%;
@@ -193,8 +193,8 @@ nav {
     .my_skills .skills-row [type="checkbox"] + label {
       padding-left: 31px; }
     .my_skills .skills-row [type="checkbox"].filled-in:checked + label:after {
-      background-color: #8986c3;
-      border: 2px solid #8986c3; }
+      background-color: #435993;
+      border: 2px solid #435993; }
     .my_skills .skills-row [type="checkbox"].filled-in:not(:checked) + label:after {
       border: 2px solid #435993; }
   .my_skills h4 {
@@ -517,7 +517,7 @@ nav {
   -ms-transform: translate(100%, 0);
   -o-transform: translate(100%, 0);
   transform: translate(100%, 0);
-  background-color: #8986c3;
+  background-color: #435993;
   text-align: center;
   -webkit-transition: all .4s ease-out;
   -moz-transition: all .4s ease-out;
